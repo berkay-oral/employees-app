@@ -1,0 +1,133 @@
+html {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 17px;
+}
+
+html body {
+  background: linear-gradient(37deg, #00ffa2 0%, #a4f0ff 100%) no-repeat;
+  height: 100vh;
+  /*# sourceMappingURL=style.css.map */
+}
+
+html body .imagePopup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  visibility: hidden;
+}
+
+html body .imagePopup .imagesBorder {
+  width: 350px;
+  height: 450px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+}
+
+html body .imagePopup .imagesBorder .cancel {
+  color: blue;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 5;
+  position: absolute;
+}
+
+html body .imagePopupShow {
+  visibility: visible;
+}
+
+html body section {
+  position: relative;
+}
+
+html body section .btn {
+  float: left;
+  width: 25%;
+  font-size: 1.2rem;
+  text-align: center;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: none !important;
+}
+
+html body section .btn:nth-of-type(odd) {
+  color: blue;
+  background-color: white;
+}
+
+html body section .clearfix::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+html body section .card-body {
+  background-color: white;
+  min-height: 550px;
+}
+
+html body section .card-body img {
+  border: 3px solid #175cc4;
+  cursor: pointer;
+  width: 250px;
+  height: 250px;
+  border-radius: 350px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  -webkit-animation: aniBorder .8s infinite;
+          animation: aniBorder .8s infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+html body section .card-body img:hover {
+  -webkit-animation: paused;
+          animation: paused;
+}
+
+@-webkit-keyframes aniBorder {
+  0% {
+    border: 3px solid #175cc4;
+  }
+  50% {
+    border: 13px solid #72abff;
+  }
+  100% {
+    border: 3px solid #175cc4;
+  }
+}
+
+@keyframes aniBorder {
+  0% {
+    border: 3px solid #175cc4;
+  }
+  50% {
+    border: 13px solid #72abff;
+  }
+  100% {
+    border: 3px solid #175cc4;
+  }
+}
+
+html body section .card-body hr {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+html body section .card-body:hover hr {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+/*# sourceMappingURL=style.css.map */
